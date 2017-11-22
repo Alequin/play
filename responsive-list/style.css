@@ -1,0 +1,148 @@
+:root{
+  --section-background-colour: rgba(0,80,80, 0.8);
+  --section-background-colour-dark: rgb(0,60,60);
+  --small-text: 18px;
+}
+
+html{
+  background-color: rgb(0,102,102);
+}
+
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+nav{
+  position: fixed;
+  background-color: var(--section-background-colour);
+  color: white;
+}
+
+nav li{
+  font-size: var(--small-text);
+  text-align: center;
+  list-style: none;
+  background-color: var(--section-background-colour-dark)
+}
+
+.list-container{
+  width: 80%;
+  background-color: var(--section-background-colour);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.code-container{
+  color: white;
+  padding: 10px;
+}
+
+.details-container{
+  display: none;
+  font-size: var(--small-text);
+}
+
+.details-container, .section-unordered-list{
+  padding: 0 20px 0 20px;
+}
+
+.code-title{
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+hr{
+  background-color: white;
+}
+
+.section-list-element, .section-definition-detail{
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 480px){
+  .desktop-contents-container{
+    display: none;
+  }
+
+  .container{
+    display: block;
+  }
+
+  nav{
+    top: 0;
+    width: 100%;
+  }
+
+  nav .menu-icon-container{
+    text-align: right;
+  }
+
+  nav .menu-icon{
+    width: 50px;
+    height: 50px;
+  }
+
+  nav ul{
+    display: none;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav li{
+    flex: 1;
+    white-space: nowrap;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+  .list-container{
+    margin: 70px auto 0 auto;
+  }
+}
+
+@media only screen and (min-width: 480px){
+  .phone-contents{
+    display: none;
+  }
+
+  .desktop-contents-container{
+    color: white;
+    text-align: center;
+  }
+
+  .container{
+    display: flex;
+  }
+
+  nav{
+    width: 25%;
+    height: 100%;
+  }
+
+  nav .menu-icon{
+    display: none;
+  }
+
+  nav ul{
+    padding: 0;
+  }
+
+  nav li{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .list-container{
+    margin: 10px 2% 0 27%;
+  }
+}
